@@ -1,6 +1,5 @@
 # Description: This script calculates the distance on the ruler that corresponds
 #  to a given angle for the phys 1241 microwave optics experiment
-
 import math
 
 # define constants
@@ -14,7 +13,7 @@ def calculate_distances(angle, distance_marking_at_180):
     else:
         theta = angle - 180
     
-    # compute change in distaance
+    # compute change in distance
     D = distance_marking_at_180 - ORIGIN
     final_marking = D / math.cos(math.radians(theta))
     
@@ -23,6 +22,6 @@ def calculate_distances(angle, distance_marking_at_180):
 
 # print out the distances for angles from 100 to 240
 for i in range(100, 240, 10):
-    print("angle is: " + str(i));
-    print("distance is: " + str(calculate_distances(i, RECIEVER_DIST)));
-    print("--------------------");
+    print("angle is: " + str(i))
+    print("distance is: " + str(calculate_distances(i, RECIEVER_DIST)))
+    print("--------------------")
