@@ -1,5 +1,5 @@
 # Description: This script calculates the distance on the ruler that corresponds
-#  to a given angle for the phys 1241 microwave optics experiment
+# to a given angle for the phys 1241 microwave optics experiment
 import math
 
 # define constants
