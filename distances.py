@@ -6,17 +6,17 @@ import math
 ORIGIN = 68.5
 RECIEVER_DIST = 100
 
+# calculate distance based on angle and distance marking at 180 degrees
 def calculate_distances(angle, distance_marking_at_180):
     # compute angels
     if angle <= 180:
         theta = 180 - angle
     else:
         theta = angle - 180
-    
     # compute change in distance
-    D = distance_marking_at_180 - ORIGIN
-    final_marking = D / math.cos(math.radians(theta))
-    
+    d = distance_marking_at_180 - ORIGIN
+    final_marking = d / math.cos(math.radians(theta))
+
     # return final distance on the marking that corresponds to given angle
     return final_marking + ORIGIN
 
